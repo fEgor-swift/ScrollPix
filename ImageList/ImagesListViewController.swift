@@ -5,9 +5,10 @@ final class ImagesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 200
         
     }
-    func configCell(for cell: ImagesListCell) { } 
+    func configCell(for cell: ImagesListCell) { }
 }
 extension ImagesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
