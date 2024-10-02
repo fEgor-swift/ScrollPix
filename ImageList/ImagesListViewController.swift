@@ -28,7 +28,7 @@ final class ImagesListViewController: UIViewController {
         cell.dateLabel.text = dateFormatter.string(from: currentDate)
         
         let isEvenRow = indexPath.row % 2 == 0
-        let likeImageName = isEvenRow ? "likeButtonOff" : "likeButtonOn"
+        let likeImageName = isEvenRow ? "likeButtonOn" : "likeButtonOff"
         cell.likeButton.setImage(UIImage(named: likeImageName), for: .normal)
     }
 }
