@@ -50,7 +50,7 @@
 		84291E592CA5720F00D7447E /* ScrollPixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPixUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84A8E51B2CAAA22F005B252E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Sprint_8_-_Lesson_4_-_3_-_Add_TableView_DataSource_and_Delegate/Image Feed/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		84A8E51D2CAAA678005B252E /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
-		84A8E5212CAAA705005B252E /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagesListViewController.swift; path = ../ImageList/ImagesListViewController.swift; sourceTree = "<group>"; };
+		84A8E5212CAAA705005B252E /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,6 @@
 		84291E352CA5720D00D7447E /* ScrollPix */ = {
 			isa = PBXGroup;
 			children = (
-				84A8E5212CAAA705005B252E /* ImagesListViewController.swift */,
 				84291E362CA5720D00D7447E /* AppDelegate.swift */,
 				84291E382CA5720D00D7447E /* SceneDelegate.swift */,
 				84A8E51A2CAAA22F005B252E /* Main.storyboard */,
@@ -133,6 +132,7 @@
 		84A8E5202CAAA6E6005B252E /* ImageList */ = {
 			isa = PBXGroup;
 			children = (
+				84A8E5212CAAA705005B252E /* ImagesListViewController.swift */,
 				84A8E51D2CAAA678005B252E /* ImagesListCell.swift */,
 			);
 			path = ImageList;
