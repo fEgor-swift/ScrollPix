@@ -15,6 +15,7 @@
 		84597A782CAE8DFC005C6C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84597A772CAE8DFC005C6C84 /* Main.storyboard */; };
 		84A8E51E2CAAA678005B252E /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8E51D2CAAA678005B252E /* ImagesListCell.swift */; };
 		84A8E5222CAAAA3C005B252E /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8E5212CAAA705005B252E /* ImagesListViewController.swift */; };
+		84DED0112CB42D630005361C /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DED0102CB42D630005361C /* SingleImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		84597A772CAE8DFC005C6C84 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84A8E51D2CAAA678005B252E /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 		84A8E5212CAAA705005B252E /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
+		84DED0102CB42D630005361C /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				84A8E5212CAAA705005B252E /* ImagesListViewController.swift */,
 				84A8E51D2CAAA678005B252E /* ImagesListCell.swift */,
 				841242A02CAEA75100348805 /* ProfileViewController.swift */,
+				84DED0102CB42D630005361C /* SingleImageViewController.swift */,
 			);
 			path = ImageList;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				84A8E51E2CAAA678005B252E /* ImagesListCell.swift in Sources */,
 				841242A12CAEA75100348805 /* ProfileViewController.swift in Sources */,
 				84A8E5222CAAAA3C005B252E /* ImagesListViewController.swift in Sources */,
+				84DED0112CB42D630005361C /* SingleImageViewController.swift in Sources */,
 				84291E392CA5720D00D7447E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

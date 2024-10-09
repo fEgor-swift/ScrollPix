@@ -2,8 +2,9 @@ import UIKit
 
 final class ImagesListViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
+  //  @IBOutlet private var imageView: UIImageView!
     private let photosName: [String] = Array(0..<20).map { "\($0)" }
-    
+ //   var image: UIImage?
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -15,8 +16,25 @@ final class ImagesListViewController: UIViewController {
         super.viewDidLoad()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
+       // imageView.image = image
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "ShowSingleImage" { // 1
+               guard
+                   let viewController = segue.destination as? SingleImageViewController,
+                   let indexPath = sender as? IndexPath
+               else {
+                   assertionFailure("Invalid segue destination")
+                   return
+               }
+               
+               let image = UIImage(named: photosName[indexPath.row])
+               viewController.image = image
+           } else {
+               super.prepare(for: segue, sender: sender)
+           }
+       }
+   
     func configCell(for cell: ImagesListCell, with indexPath: IndexPath) {
         let photoName = photosName[indexPath.row]
 
@@ -59,6 +77,10 @@ extension ImagesListViewController: UITableViewDelegate {
         let cellWidth = tableView.frame.width
         let imageViewHeight = cellWidth * aspectRatio
         
-        return imageViewHeight + 16 
+        return imageViewHeight + 16
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      performSegue(withIdentifier: "ShowSingleImage", sender: indexPath)
     }
 }
