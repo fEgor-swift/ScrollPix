@@ -10,7 +10,7 @@ final class ProfileViewController: UIViewController {
             let userNickName = userNickName()
             let avatarImage = avatarImage()
             let profileText = profileText()
-        
+            let logoutButton = logoutButton ()
        
             
             NSLayoutConstraint.activate([
@@ -24,6 +24,10 @@ final class ProfileViewController: UIViewController {
                 userNickName.leadingAnchor.constraint(equalTo: avatarImage.leadingAnchor),
                 profileText.topAnchor.constraint(equalTo: userNickName.bottomAnchor, constant: 8),
                 profileText.leadingAnchor.constraint(equalTo: avatarImage.leadingAnchor),
+                logoutButton.heightAnchor.constraint(equalToConstant: 44),
+                logoutButton.widthAnchor.constraint(equalToConstant: 44),
+                logoutButton.centerYAnchor.constraint(equalTo: avatarImage.centerYAnchor),
+                logoutButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24)
             ])
         }
 
@@ -64,7 +68,14 @@ final class ProfileViewController: UIViewController {
         
         return avatarImage
     }
-
+    func logoutButton() -> UIButton {
+        let logoutButton = UIButton()
+        logoutButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(logoutButton)
+        logoutButton.setImage(UIImage(named: "logout_button"), for: .normal)
+        
+        return logoutButton
+    }
 }
     
 
