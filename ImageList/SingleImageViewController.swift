@@ -8,15 +8,15 @@ final class SingleImageViewController: UIViewController {
             imageView.image = image
         }
     }
-
+    
     
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet private var imageView: UIImageView!
     
     
     @IBAction private func didTapBackButton() {
-          dismiss(animated: true, completion: nil)
-      }
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func didTapShareButton(_ sender: UIButton) {
         guard let image else { return }
         let share = UIActivityViewController(
@@ -28,7 +28,7 @@ final class SingleImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         scrollView.minimumZoomScale = 0.1
         scrollView.maximumZoomScale = 1.25
         guard let image else { return }
