@@ -72,7 +72,12 @@ final class ProfileViewController: UIViewController {
         let logoutButton = UIButton()
         logoutButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoutButton)
+        
+        // Устанавливаем изображение для кнопки
         logoutButton.setImage(UIImage(named: "logout_button"), for: .normal)
+    
+        // Добавляем contentMode, чтобы изображение адаптировалось к размеру кнопки
+        logoutButton.imageView?.contentMode = .scaleAspectFit
         
         return logoutButton
     }
